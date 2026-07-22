@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Search from './components/Search.jsx';
 import { fetchMovies, fetchTrending } from './services/api.js';
+import heroImg from '/hero-img.png';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -90,7 +91,7 @@ return (
         {/* Header stays centered */}
         <div className="wrapper">
           <header className="flex flex-col items-center text-center">
-            <img src="hero-img.png" alt="Hero banner" />
+            <img src={heroImg} alt="Hero banner" />
             <h1>
               find <span className="text-gradient">movies</span> you will enjoy <br />without hassle...
             </h1>

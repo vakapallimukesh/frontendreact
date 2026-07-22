@@ -1,11 +1,12 @@
 import React from 'react';
+import searchIcon from '/search.svg';
 
 const Search = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="search-bar">
       <div className="search-input-wrapper">
         <img
-          src="search.svg"
+          src={searchIcon}
           alt="search-icon"
           className="search-icon"
         />
